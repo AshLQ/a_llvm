@@ -13,4 +13,6 @@ add_llvm_library(LLVMObfuscator MODULE
         src/ControlFlowFlattening.cpp
         src/Utils.cpp
         src/FakeControl.cpp
+        src/InsSubstitution.cpp
+        src/RandControlFlow.cpp
         )

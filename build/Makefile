@@ -311,6 +311,30 @@ src/HelloWorld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/HelloWorld.cpp.s
 .PHONY : src/HelloWorld.cpp.s
 
+src/InsSubstitution.o: src/InsSubstitution.cpp.o
+.PHONY : src/InsSubstitution.o
+
+# target to build an object file
+src/InsSubstitution.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/InsSubstitution.cpp.o
+.PHONY : src/InsSubstitution.cpp.o
+
+src/InsSubstitution.i: src/InsSubstitution.cpp.i
+.PHONY : src/InsSubstitution.i
+
+# target to preprocess a source file
+src/InsSubstitution.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/InsSubstitution.cpp.i
+.PHONY : src/InsSubstitution.cpp.i
+
+src/InsSubstitution.s: src/InsSubstitution.cpp.s
+.PHONY : src/InsSubstitution.s
+
+# target to generate assembly for a file
+src/InsSubstitution.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LLVMObfuscator.dir/build.make CMakeFiles/LLVMObfuscator.dir/src/InsSubstitution.cpp.s
+.PHONY : src/InsSubstitution.cpp.s
+
 src/SplitBasicBlock.o: src/SplitBasicBlock.cpp.o
 .PHONY : src/SplitBasicBlock.o
 
@@ -386,6 +410,9 @@ help:
 	@echo "... src/HelloWorld.o"
 	@echo "... src/HelloWorld.i"
 	@echo "... src/HelloWorld.s"
+	@echo "... src/InsSubstitution.o"
+	@echo "... src/InsSubstitution.i"
+	@echo "... src/InsSubstitution.s"
 	@echo "... src/SplitBasicBlock.o"
 	@echo "... src/SplitBasicBlock.i"
 	@echo "... src/SplitBasicBlock.s"

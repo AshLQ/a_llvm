@@ -21,3 +21,8 @@ echo "===================fake control==========================="
 opt -load ../build/LLVMObfuscator.so -fakecontrol -S IR/TestProgram.ll -o IR/TestProgram_fakeControl.ll
 clang IR/TestProgram_fakeControl.ll -o bin/TestProgram_fakeControl
 ./bin/TestProgram_fakeControl flag{s1mpl3_11vm_d3m0}
+
+echo "===================ins subst========ls==================="
+opt -load ../build/LLVMObfuscator.so -inssubst -S IR/TestProgram.ll -o IR/TestProgram_inssubst.ll
+clang IR/TestProgram_inssubst.ll -o bin/TestProgram_inssubst
+./bin/TestProgram_inssubst flag{s1mpl3_11vm_d3m0}
